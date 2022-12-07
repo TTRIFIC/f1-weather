@@ -7,7 +7,7 @@ import "./weather.css";
 const API_KEY = "0e794f9efeda7de9b2d8bc440b1e4ed0";
 
 const F1_SCHEDULE = [
-  { location: "CANADA", city: "Montreal", date: "2023-03-05" },
+  { location: "BAHRAIN", city: "Dar Kulayb", date: "2023-03-05" },
   { location: "SAUDI ARABIA", city: "Jeddah", date: "2023-03-19" },
   { location: "AUSTRALIA", city: "Melbourne", date: "2023-04-02" },
   // ...
