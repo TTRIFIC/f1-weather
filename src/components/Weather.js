@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 //import getF1Schedule from "./Formula1Schedule";
 
-import "./weather.css";
+//import "./weather.css";
+import "./newWeather.css";
 
 const API_KEY = "0e794f9efeda7de9b2d8bc440b1e4ed0";
 
@@ -49,12 +50,14 @@ const Weather = () => {
   const tempCelsius = (weather.main.temp - 273.15).toFixed(1);
 
   return (
-    <div className="weather-app">
-      <h1>{weather.name}</h1>
-      <p>
-        Current temperature: {tempFahrenheit}°F / {tempCelsius}°C
-      </p>
-      <p>Weather conditions: {weather.weather[0].main}</p>
+    <div className="weather-card">
+      <h1>{getNextRace().location}</h1>
+      <div className="current-weather">
+        <p>
+          {tempFahrenheit}°F / {tempCelsius}°C
+        </p>
+        <p>{weather.weather[0].main}</p>
+      </div>
     </div>
   );
 };
