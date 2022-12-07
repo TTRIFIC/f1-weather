@@ -1,0 +1,16 @@
+.weather-app{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.weather-app h1{
+    font-size: 32px;
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+.weather-app p{
+    font-size: 18px;
+    margin: 8px 0;
+}
