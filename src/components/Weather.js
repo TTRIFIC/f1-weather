@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import API_KEY from "../utils/OpenWeatherAPI";
 //import getF1Schedule from "./Formula1Schedule";
 
 //import "./weather.css";
 import "./newWeather.css";
-
-const API_KEY = "0e794f9efeda7de9b2d8bc440b1e4ed0";
 
 const F1_SCHEDULE = [
   { location: "BAHRAIN", city: "Dar Kulayb", date: "2023-03-05" },

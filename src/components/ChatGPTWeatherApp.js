@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import moment from "moment";
+import API_KEY from "../utils/OpenWeatherAPI";
 
 import "./ChatGPTWeatherCSS.css";
 
@@ -25,8 +26,6 @@ import "./ChatGPTWeatherCSS.css";
   Updated at {moment(weatherData.updatedAt).format("h:mm a")}
 </div>
 */
-
-const API_KEY = "0e794f9efeda7de9b2d8bc440b1e4ed0";
 
 const ChatGPTWeather = () => {
   const [city, setCity] = useState("New York");
