@@ -11,8 +11,8 @@ const Layout = () => {
       <div className="Countdown Timer" />
       <div className="CurrentWeather">
         <div className="Card">
-          <div className="CurrentWeatherConditions" />
           <div className="CurrentWeatherTemperature" />
+          <div className="CurrentWeatherConditions" />
           <div className="CurrentWeatherIcon" />
         </div>
       </div>
