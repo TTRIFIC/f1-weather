@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ChatGPTWeather from "./components/ChatGPTWeatherApp";
 import axios from "axios";
 import API_KEY from "./utils/OpenWeatherAPI";
+import Container from "./components/Container";
 
 import "./App.css";
 
@@ -22,24 +22,18 @@ function App() {
       .catch((error) => {
         console.error(error);
       });
-  }, [city]);
+  }, [city, location]);
 
   if (!weatherData) {
     return <div>Loading...</div>;
   }
 
-  // convert temperature from Kelvin to Fahrenheit and Celsius
-  const tempFahrenheit = ((weatherData.main.temp * 9) / 5 - 459.67).toFixed(1);
-  const tempCelsius = (weatherData.main.temp - 273.15).toFixed(1);
-
   return (
-    <ChatGPTWeather
-      weatherData={weatherData}
-      tempFahrenheit={tempFahrenheit}
-      tempCelsius={tempCelsius}
+    <Container
       city={city}
       location={location}
-    />
+      weatherData={weatherData}
+    ></Container>
   );
 }
 

@@ -5,7 +5,11 @@ import "./CurrentWeather.css";
 
 // Will need to pass in props from App.js
 
-const CurrentWeather = () => {
+const CurrentWeather = ({ weatherData }) => {
+  // convert temperature from Kelvin to Fahrenheit and Celsius
+  const tempFahrenheit = ((weatherData.main.temp * 9) / 5 - 459.67).toFixed(1);
+  const tempCelsius = (weatherData.main.temp - 273.15).toFixed(1);
+
   return (
     <Card>
       <div className="CurrentWeatherTemperature" />

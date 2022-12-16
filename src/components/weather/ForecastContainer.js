@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../Card";
 import DailyForecast from "./DailyForecast";
 
 import "./ForecastContainer.css";

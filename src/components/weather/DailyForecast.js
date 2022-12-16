@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../Card";
 
 import "./DailyForecast.css";
 
@@ -6,14 +7,14 @@ import "./DailyForecast.css";
 
 const DailyForecast = () => {
   return (
-    <div className="daily-wrapper">
+    <Card>
       <div className="date">Test</div>
       <div className="icon">Icon</div>
       <div className="highs-lows">
         <div className="high">H: Hi</div>
         <div className="low">L: Lo</div>
       </div>
-    </div>
+    </Card>
   );
 };
 

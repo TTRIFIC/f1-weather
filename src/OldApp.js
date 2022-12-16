@@ -2,18 +2,10 @@ import React, { useState, useEffect } from "react";
 import ChatGPTWeather from "./components/ChatGPTWeatherApp";
 import axios from "axios";
 import API_KEY from "./utils/OpenWeatherAPI";
-import Container from "./components/Container";
-import Logo from "./components/Logo";
-import LocationInfo from "./components/location/LocationInfo";
-import Timer from "./components/Timer";
-import CurrentWeather from "./components/weather/CurrentWeather";
-import HourlyWeather from "./components/weather/HourlyWeather";
-import ForecastContainer from "./components/weather/ForecastContainer";
-import Radar from "./components/weather/Radar";
 
 import "./App.css";
 
-function DevApp() {
+function App() {
   const [city, setCity] = useState("New York");
   const [location, setLocation] = useState("USA");
   const [weatherData, setWeatherData] = useState(null);
@@ -30,7 +22,7 @@ function DevApp() {
       .catch((error) => {
         console.error(error);
       });
-  }, [city]);
+  }, [city, location]);
 
   if (!weatherData) {
     return <div>Loading...</div>;
@@ -41,16 +33,14 @@ function DevApp() {
   const tempCelsius = (weatherData.main.temp - 273.15).toFixed(1);
 
   return (
-    <Container>
-      <Logo />
-      <LocationInfo />
-      <Timer />
-      <CurrentWeather />
-      <HourlyWeather />
-      <ForecastContainer />
-      <Radar />
-    </Container>
+    <ChatGPTWeather
+      weatherData={weatherData}
+      tempFahrenheit={tempFahrenheit}
+      tempCelsius={tempCelsius}
+      city={city}
+      location={location}
+    />
   );
 }
 
-export default DevApp;
+export default App;
