@@ -6,7 +6,7 @@ import "./Timer.css";
 // May need to pass in props from App.js
 
 const Timer = () => {
-  return <div>Timer</div>;
+  return <div className="timer">00:00:00</div>;
 };
 
 export default Timer;

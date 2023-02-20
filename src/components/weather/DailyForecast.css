@@ -8,6 +8,8 @@
     width: 150px;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
@@ -15,6 +17,10 @@
       padding: 15px;
       width: 250px;
       height: 100px;
-      display: grid;
   }
+}
+
+.date {
+    justify-content: center;
+    padding: 10px;
 }

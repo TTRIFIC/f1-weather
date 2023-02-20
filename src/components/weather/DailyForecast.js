@@ -9,10 +9,7 @@ const DailyForecast = () => {
     <div className="daily-card">
       <div className="date">Test</div>
       <div className="icon">Icon</div>
-      <div className="highs-lows">
-        <div className="high">H: Hi</div>
-        <div className="low">L: Lo</div>
-      </div>
+      <div className="highs-lows">H: Hi | L: Lo</div>
     </div>
   );
 };
