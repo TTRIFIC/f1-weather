@@ -9,7 +9,7 @@ import Radar from "./weather/Radar";
 
 import "./Container.css";
 
-const Container = ({ city, location, weatherData }) => {
+const Container = ({ city, location, weatherData, scheduleData }) => {
   return (
     <div className="container">
       <Logo />
