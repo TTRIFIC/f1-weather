@@ -5,5 +5,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    height: 100vh;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }

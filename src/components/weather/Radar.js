@@ -4,11 +4,7 @@ import Card from "../Card";
 import "./Radar.css";
 
 const Radar = () => {
-  return (
-    <div className="radar-wrapper">
-      <Card>Radar Coming Soon</Card>
-    </div>
-  );
+  return <Card>Radar Coming Soon</Card>;
 };
 
 export default Radar;
