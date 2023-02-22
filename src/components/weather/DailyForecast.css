@@ -15,8 +15,8 @@
 @media screen and (max-width: 600px) {
   .daily-card {
       padding: 15px;
-      width: 250px;
-      height: 100px;
+      width: 300px;
+      height: 150px;
   }
 }
 
