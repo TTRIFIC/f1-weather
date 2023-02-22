@@ -10,8 +10,6 @@ import Radar from "./weather/Radar";
 import "./Container.css";
 
 const Container = ({ city, location, weatherData, scheduleData }) => {
-  const raceDate = "";
-
   return (
     <div className="container">
       <Logo />

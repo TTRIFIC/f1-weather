@@ -5,8 +5,10 @@ import "./Timer.css";
 // Figure out how to do the timer
 // May need to pass in props from App.js
 
-const Timer = () => {
-  const [expiryTime, setExpiryTime] = useState("15 jul 2023 18:00:00");
+const Timer = ({ scheduleData }) => {
+  const raceDate = scheduleData.MRData.RaceTable.Races[0].date;
+  const raceTime = scheduleData.MRData.RaceTable.Races[0].time;
+  const [expiryTime, setExpiryTime] = useState(`${raceDate} ${raceTime}`);
   const [countdownTime, setCountdownTime] = useState({
     countdownDays: "",
     countdownHours: "",
