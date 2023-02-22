@@ -10,11 +10,13 @@ import Radar from "./weather/Radar";
 import "./Container.css";
 
 const Container = ({ city, location, weatherData, scheduleData }) => {
+  const raceDate = "";
+
   return (
     <div className="container">
       <Logo />
       <LocationInfo city={city} location={location} />
-      <Timer />
+      <Timer scheduleData={scheduleData} />
       <CurrentWeather weatherData={weatherData} />
       <HourlyWeather />
       <ForecastContainer />
