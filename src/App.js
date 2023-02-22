@@ -6,8 +6,8 @@ import Container from "./components/Container";
 import "./App.css";
 
 function App() {
-  const [lat, setLat] = useState(41.881832);
-  const [lon, setLon] = useState(-87.623177);
+  const [lat, setLat] = useState();
+  const [lon, setLon] = useState();
   const [city, setCity] = useState("Chicago");
   const [location, setLocation] = useState("USA");
   const [scheduleData, setScheduleData] = useState(null);
