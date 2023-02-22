@@ -1,6 +1,11 @@
-.weather-container {
+.container {
     display: flex;
+    flex: wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }

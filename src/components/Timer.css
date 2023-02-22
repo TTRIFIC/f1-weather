@@ -1,0 +1,10 @@
+.timer {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 600px) {
+    .timer {
+        font-size: 24px;
+    }
+  }

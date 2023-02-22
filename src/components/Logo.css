@@ -1,0 +1,11 @@
+.logo {
+    font-size: 72px;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 40px;
+    }
+  }
