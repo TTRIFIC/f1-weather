@@ -14,7 +14,7 @@ const Container = ({ city, location, weatherData, scheduleData }) => {
     <div className="container">
       <Logo />
       <LocationInfo city={city} location={location} />
-      <Timer />
+      <Timer scheduleData={scheduleData} />
       <CurrentWeather weatherData={weatherData} />
       <HourlyWeather />
       <ForecastContainer />
