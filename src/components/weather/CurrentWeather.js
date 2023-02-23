@@ -1,21 +1,27 @@
 import React from "react";
-import Card from "../Card";
 
 import "./CurrentWeather.css";
 
-// Will need to pass in props from App.js
-
 const CurrentWeather = ({ weatherData }) => {
-  // convert temperature from Kelvin to Fahrenheit and Celsius
-  const tempFahrenheit = ((weatherData.main.temp * 9) / 5 - 459.67).toFixed(1);
-  const tempCelsius = (weatherData.main.temp - 273.15).toFixed(1);
+  // Convert temperature from Kelvin to Fahrenheit and Celsius
+  const tempFahrenheit = ((weatherData.main.temp * 9) / 5 - 459.67).toFixed(0);
+  const tempCelsius = (weatherData.main.temp - 273.15).toFixed(0);
+  const currentTemp = `${tempFahrenheit}°F / ${tempCelsius}°C`;
+
+  // Gets the conditions from Weather Data
+  const currentConditions = weatherData.weather[0].main;
 
   return (
-    <Card>
-      <div className="CurrentWeatherTemperature" />
-      <div className="CurrentWeatherConditions" />
-      <div className="CurrentWeatherIcon" />
-    </Card>
+    <div className="CurrentWeatherCard">
+      <div className="CurrentWeatherTitle">NOW</div>
+      <div className="CurrentWeatherTemperature">{currentTemp}</div>
+      <img
+        className="CurrentWeatherIcon"
+        src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`}
+        alt={weatherData.weather[0].main}
+      />
+      <div className="CurrentWeatherConditions">{currentConditions}</div>
+    </div>
   );
 };
 
