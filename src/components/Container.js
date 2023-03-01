@@ -10,13 +10,16 @@ import Radar from "./weather/Radar";
 import "./Container.css";
 
 const Container = ({ city, location, weatherData, scheduleData }) => {
+  const raceDate = scheduleData.MRData.RaceTable.Races[0].date;
+  const raceTime = scheduleData.MRData.RaceTable.Races[0].time;
+
   return (
     <div className="container">
       <Logo />
       <LocationInfo city={city} location={location} />
-      <Timer scheduleData={scheduleData} />
+      <Timer raceDate={raceDate} raceTime={raceTime} />
       <CurrentWeather weatherData={weatherData} />
-      <HourlyWeather />
+      <HourlyWeather weatherData={weatherData} />
       <ForecastContainer />
       <Radar />
     </div>
