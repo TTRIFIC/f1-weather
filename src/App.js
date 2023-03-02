@@ -6,10 +6,10 @@ import Container from "./components/Container";
 import "./App.css";
 
 function App() {
-  const [lat, setLat] = useState();
-  const [lon, setLon] = useState();
-  const [city, setCity] = useState("Chicago");
-  const [location, setLocation] = useState("USA");
+  const [lat, setLat] = useState(null);
+  const [lon, setLon] = useState(null);
+  const [city, setCity] = useState(null);
+  const [location, setLocation] = useState(null);
   const [scheduleData, setScheduleData] = useState(null);
   const [weatherData, setWeatherData] = useState(null);
 
@@ -33,16 +33,18 @@ function App() {
       });
 
     // Get current and forecasted weather data for the selected city
-    axios
-      .get(
-        `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${API_KEY}`
-      )
-      .then((response) => {
-        setWeatherData(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    if (lat && lon) {
+      axios
+        .get(
+          `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+        )
+        .then((response) => {
+          setWeatherData(response.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   }, [lat, lon]);
 
   if (!scheduleData) {
