@@ -41,6 +41,8 @@ const Timer = ({ raceDate, raceTime }) => {
         clearInterval(timeInterval);
         setExpiryTime(false);
       }
+
+      return null;
     }, 1000);
   };
 
