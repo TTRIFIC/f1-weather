@@ -46,7 +46,7 @@ const Timer = ({ raceDate, raceTime }) => {
 
   useEffect(() => {
     countdownTimer();
-  });
+  }, []);
 
   const outputTimer = `${countdownTime.countdownDays} Days ${countdownTime.countdownHours} Hours ${countdownTime.countdownMinutes} Minutes ${countdownTime.countdownSeconds} Seconds`;
 
