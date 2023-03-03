@@ -2,8 +2,6 @@ import React from "react";
 
 import "./DailyForecast.css";
 
-// Will need to pass down weather info as props
-
 const DailyForecast = ({ dayInfo }) => {
   return (
     <div className="daily-card">
