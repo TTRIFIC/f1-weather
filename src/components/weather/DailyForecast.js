@@ -9,11 +9,11 @@ const DailyForecast = ({ dayInfo }) => {
     <div className="daily-card">
       <div className="DayTitle">{dayInfo.day}</div>
       <img
-        className="CurrentWeatherIcon"
-        src={`http://openweathermap.org/img/wn/${dayInfo.icon}@4x.png`}
+        className="DayIcon"
+        src={`http://openweathermap.org/img/wn/${dayInfo.icon}@2x.png`}
         alt={dayInfo.condition}
       />
-      <div className="condition">{dayInfo.condition}</div>
+      <div className="DayCondition">{dayInfo.condition}</div>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const HourlyWeather = ({ weatherData }) => {
           <div className="HourTime">1 hr</div>
           <img
             className="HourIcon"
-            src={`http://openweathermap.org/img/wn/${weatherData.hourly[0].weather[0].icon}.png`}
+            src={`http://openweathermap.org/img/wn/${weatherData.hourly[0].weather[0].icon}@2x.png`}
             alt={weatherData.hourly[0].weather[0].main}
           />
           <div className="HourTemp">{hour1Temp}</div>
@@ -36,7 +36,7 @@ const HourlyWeather = ({ weatherData }) => {
           <div className="HourTime">2 hrs</div>
           <img
             className="HourIcon"
-            src={`http://openweathermap.org/img/wn/${weatherData.hourly[1].weather[0].icon}.png`}
+            src={`http://openweathermap.org/img/wn/${weatherData.hourly[1].weather[0].icon}@2x.png`}
             alt={weatherData.hourly[1].weather[0].main}
           />
           <div className="HourTemp">{hour2Temp}</div>
@@ -45,7 +45,7 @@ const HourlyWeather = ({ weatherData }) => {
           <div className="HourTime">3 hrs</div>
           <img
             className="HourIcon"
-            src={`http://openweathermap.org/img/wn/${weatherData.hourly[2].weather[0].icon}.png`}
+            src={`http://openweathermap.org/img/wn/${weatherData.hourly[2].weather[0].icon}@2x.png`}
             alt={weatherData.hourly[2].weather[0].main}
           />
           <div className="HourTemp">{hour3Temp}</div>
@@ -54,7 +54,7 @@ const HourlyWeather = ({ weatherData }) => {
           <div className="HourTime">4 hrs</div>
           <img
             className="HourIcon"
-            src={`http://openweathermap.org/img/wn/${weatherData.hourly[3].weather[0].icon}.png`}
+            src={`http://openweathermap.org/img/wn/${weatherData.hourly[3].weather[0].icon}@2x.png`}
             alt={weatherData.hourly[3].weather[0].main}
           />
           <div className="HourTemp">{hour4Temp}</div>
@@ -63,7 +63,7 @@ const HourlyWeather = ({ weatherData }) => {
           <div className="HourTime">5 hrs</div>
           <img
             className="HourIcon"
-            src={`http://openweathermap.org/img/wn/${weatherData.hourly[4].weather[0].icon}.png`}
+            src={`http://openweathermap.org/img/wn/${weatherData.hourly[4].weather[0].icon}@2x.png`}
             alt={weatherData.hourly[4].weather[0].main}
           />
           <div className="HourTemp">{hour5Temp}</div>
@@ -72,7 +72,7 @@ const HourlyWeather = ({ weatherData }) => {
           <div className="HourTime">6 hrs</div>
           <img
             className="HourIcon"
-            src={`http://openweathermap.org/img/wn/${weatherData.hourly[5].weather[0].icon}.png`}
+            src={`http://openweathermap.org/img/wn/${weatherData.hourly[5].weather[0].icon}@2x.png`}
             alt={weatherData.hourly[5].weather[0].main}
           />
           <div className="HourTemp">{hour6Temp}</div>
