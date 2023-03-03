@@ -8,7 +8,11 @@ const DailyForecast = ({ dayInfo }) => {
   return (
     <div className="daily-card">
       <div className="DayTitle">{dayInfo.day}</div>
-      <div className="icon">{dayInfo.icon}</div>
+      <img
+        className="CurrentWeatherIcon"
+        src={`http://openweathermap.org/img/wn/${dayInfo.icon}@4x.png`}
+        alt={dayInfo.condition}
+      />
       <div className="condition">{dayInfo.condition}</div>
     </div>
   );

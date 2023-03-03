@@ -35,21 +35,56 @@ const ForecastContainer = ({ weatherData, scheduleData }) => {
     );
   }
 
-  const dayOne = {
+  let dayOne = {
     day: days[dayOneDate.getDay()],
     icon: null,
-    condition: "Sunny",
+    condition: "No Data!",
   };
-  const dayTwo = {
+  let dayTwo = {
     day: days[dayTwoDate.getDay()],
     icon: null,
-    condition: "Clear",
+    condition: "No Data!",
   };
-  const dayThree = {
+  let dayThree = {
     day: days[dayThreeDate.getDay()],
     icon: null,
-    condition: "Cloudy",
+    condition: "No Data!",
   };
+
+  for (let i = 0; i < 8; i++) {
+    let weatherTime = new Date(weatherData.daily[i].dt * 1000);
+
+    let weatherInfo = {
+      year: weatherTime.getFullYear(),
+      month: weatherTime.getMonth(),
+      day: weatherTime.getDay(),
+    };
+
+    if (
+      weatherInfo.year === dayOneDate.getFullYear() &&
+      weatherInfo.month === dayOneDate.getMonth() &&
+      weatherInfo.day === dayOneDate.getDay()
+    ) {
+      dayOne.icon = weatherData.daily[i].weather[0].icon;
+      dayOne.condition = weatherData.daily[i].weather[0].main;
+    }
+    if (
+      weatherInfo.year === dayTwoDate.getFullYear() &&
+      weatherInfo.month === dayTwoDate.getMonth() &&
+      weatherInfo.day === dayTwoDate.getDay()
+    ) {
+      dayTwo.icon = weatherData.daily[i].weather[0].icon;
+      dayTwo.condition = weatherData.daily[i].weather[0].main;
+    }
+    if (
+      weatherInfo.year === dayThreeDate.getFullYear() &&
+      weatherInfo.month === dayThreeDate.getMonth() &&
+      weatherInfo.day === dayThreeDate.getDay()
+    ) {
+      dayThree.icon = weatherData.daily[i].weather[0].icon;
+      dayThree.condition = weatherData.daily[i].weather[0].main;
+    }
+  }
 
   return (
     <div className="forecast-wrapper">
