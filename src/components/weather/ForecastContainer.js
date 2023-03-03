@@ -3,14 +3,48 @@ import DailyForecast from "./DailyForecast";
 
 import "./ForecastContainer.css";
 
-// Will need to pass down props for weather info
+const ForecastContainer = ({ weatherData, scheduleData }) => {
+  let dayOneDate = new Date(
+    scheduleData.MRData.RaceTable.Races[0].FirstPractice.date +
+      scheduleData.MRData.RaceTable.Races[0].FirstPractice.time
+  );
+  let dayTwoDate = new Date(
+    scheduleData.MRData.RaceTable.Races[0].Qualifying.date +
+      scheduleData.MRData.RaceTable.Races[0].Qualifying.time
+  );
+  let dayThreeDate = new Date(
+    scheduleData.MRData.RaceTable.Races[0].date +
+      scheduleData.MRData.RaceTable.Races[0].time
+  );
 
-const ForecastContainer = () => {
+  if (!scheduleData.MRData.RaceTable.Races[0].ThirdPractice.Date) {
+    dayTwoDate = new Date(
+      scheduleData.MRData.RaceTable.Races[0].SecondPractice.date +
+        scheduleData.MRData.RaceTable.Races[0].SecondPractice.time
+    );
+  }
+
+  const dayOne = {
+    day: "Friday",
+    icon: null,
+    condition: "Sunny",
+  };
+  const dayTwo = {
+    day: "Saturday",
+    icon: null,
+    condition: "Clear",
+  };
+  const dayThree = {
+    day: "Sunday",
+    icon: null,
+    condition: "Cloudy",
+  };
+
   return (
     <div className="forecast-wrapper">
-      <DailyForecast />
-      <DailyForecast />
-      <DailyForecast />
+      <DailyForecast dayInfo={dayOne} />
+      <DailyForecast dayInfo={dayTwo} />
+      <DailyForecast dayInfo={dayThree} />
     </div>
   );
 };

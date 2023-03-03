@@ -12,15 +12,20 @@
     flex-direction: column;
 }
 
+.DayTitle {
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+}
+
+.DayCondition {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 @media screen and (max-width: 600px) {
   .daily-card {
       padding: 15px;
       width: 300px;
       height: 150px;
   }
-}
-
-.date {
-    justify-content: center;
-    padding: 10px;
 }
