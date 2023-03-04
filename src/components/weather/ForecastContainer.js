@@ -16,16 +16,13 @@ const ForecastContainer = ({ weatherData, scheduleData }) => {
   ];
 
   let dayOneDate = new Date(
-    `${scheduleData.MRData.RaceTable.Races[0].FirstPractice.date}
-      ${scheduleData.MRData.RaceTable.Races[0].FirstPractice.time}`
+    `${scheduleData.MRData.RaceTable.Races[0].FirstPractice.date} ${scheduleData.MRData.RaceTable.Races[0].FirstPractice.time}`
   );
   let dayTwoDate = new Date(
-    `${scheduleData.MRData.RaceTable.Races[0].Qualifying.date}
-      ${scheduleData.MRData.RaceTable.Races[0].Qualifying.time}`
+    `${scheduleData.MRData.RaceTable.Races[0].Qualifying.date} ${scheduleData.MRData.RaceTable.Races[0].Qualifying.time}`
   );
   let dayThreeDate = new Date(
-    `${scheduleData.MRData.RaceTable.Races[0].date}
-      ${scheduleData.MRData.RaceTable.Races[0].time}`
+    `${scheduleData.MRData.RaceTable.Races[0].date} ${scheduleData.MRData.RaceTable.Races[0].time}`
   );
 
   if (scheduleData.MRData.RaceTable.Races[0].ThirdPractice.Date) {
