@@ -2,14 +2,16 @@ import React from "react";
 
 import "./DailyForecast.css";
 
-// Will need to pass down weather info as props
-
-const DailyForecast = () => {
+const DailyForecast = ({ dayInfo }) => {
   return (
     <div className="daily-card">
-      <div className="date">Test</div>
-      <div className="icon">Icon</div>
-      <div className="highs-lows">H: Hi | L: Lo</div>
+      <div className="DayTitle">{dayInfo.day}</div>
+      <img
+        className="DayIcon"
+        src={`http://openweathermap.org/img/wn/${dayInfo.icon}@2x.png`}
+        alt={dayInfo.condition}
+      />
+      <div className="DayCondition">{dayInfo.condition}</div>
     </div>
   );
 };

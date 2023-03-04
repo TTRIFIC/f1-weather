@@ -6,10 +6,27 @@
     padding: 1em;
     height: 150px;
     width: 150px;
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+}
+
+.DayTitle {
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+  align-self: center;
+}
+
+.DayIcon {
+  width: 75%;
+  height: 75%;
+  align-self: center;
+}
+
+.DayCondition {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-self: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -18,9 +35,8 @@
       width: 300px;
       height: 150px;
   }
-}
 
-.date {
-    justify-content: center;
-    padding: 10px;
+  .DayIcon {
+    width: 36%;
+  }
 }

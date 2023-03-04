@@ -3,7 +3,7 @@
     flex: auto;
     flex-direction: row;
     gap: 1em;
-    padding: 1em; 
+    padding: 1em;
 }
 
 @media screen and (max-width: 600px) {

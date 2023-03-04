@@ -20,7 +20,10 @@ const Container = ({ city, location, weatherData, scheduleData }) => {
       <Timer raceDate={raceDate} raceTime={raceTime} />
       <CurrentWeather weatherData={weatherData} />
       <HourlyWeather weatherData={weatherData} />
-      <ForecastContainer />
+      <ForecastContainer
+        weatherData={weatherData}
+        scheduleData={scheduleData}
+      />
       <Radar />
     </div>
   );
