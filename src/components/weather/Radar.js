@@ -1,10 +1,13 @@
 import React from "react";
-import Card from "../Card";
 
 import "./Radar.css";
 
 const Radar = () => {
-  return <Card>Radar Coming Soon</Card>;
+  return (
+    <div className="RadarCard">
+      <div className="RadarTitle">RADAR</div>
+    </div>
+  );
 };
 
 export default Radar;
