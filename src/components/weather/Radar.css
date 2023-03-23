@@ -6,14 +6,18 @@
     padding: 1em;
     height: 650px;
     width: 550px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .RadarTitle {
     font-family: 'Titillium Web', sans-serif;
     color: black;
+    padding-bottom: 10px;
+}
+
+.RadarMap{
+    height: 200%;
 }
 
 
