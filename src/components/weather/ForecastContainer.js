@@ -25,9 +25,9 @@ const ForecastContainer = ({ weatherData, scheduleData }) => {
     `${scheduleData.MRData.RaceTable.Races[0].date} ${scheduleData.MRData.RaceTable.Races[0].time}`
   );
 
-  if (scheduleData.MRData.RaceTable.Races[0].Sprint.Date) {
+  if (scheduleData.MRData.RaceTable.Races[0].Sprint.Date !== null) {
     dayTwoDate = new Date(
-      `${scheduleData.MRData.RaceTable.Races[0].SecondPractice.date} ${scheduleData.MRData.RaceTable.Races[0].SecondPractice.time}`
+      `${scheduleData.MRData.RaceTable.Races[0].Sprint.date} ${scheduleData.MRData.RaceTable.Races[0].Sprint.time}`
     );
   }
 
