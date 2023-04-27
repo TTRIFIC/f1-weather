@@ -5,7 +5,6 @@ import Timer from "./Timer";
 import CurrentWeather from "./weather/CurrentWeather";
 import HourlyWeather from "./weather/HourlyWeather";
 import ForecastContainer from "./weather/ForecastContainer";
-import Radar from "./weather/Radar";
 
 import "./Container.css";
 
@@ -24,7 +23,6 @@ const Container = ({ city, location, weatherData, scheduleData }) => {
         weatherData={weatherData}
         scheduleData={scheduleData}
       />
-      <Radar />
     </div>
   );
 };
