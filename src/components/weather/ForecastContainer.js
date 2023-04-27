@@ -25,27 +25,26 @@ const ForecastContainer = ({ weatherData, scheduleData }) => {
     `${scheduleData.MRData.RaceTable.Races[0].date} ${scheduleData.MRData.RaceTable.Races[0].time}`
   );
 
-  if (scheduleData.MRData.RaceTable.Races[0].ThirdPractice.Date) {
+  if (scheduleData.MRData.RaceTable.Races[0].Sprint.Date) {
     dayTwoDate = new Date(
-      `${scheduleData.MRData.RaceTable.Races[0].SecondPractice.date}
-        ${scheduleData.MRData.RaceTable.Races[0].SecondPractice.time}`
+      `${scheduleData.MRData.RaceTable.Races[0].SecondPractice.date} ${scheduleData.MRData.RaceTable.Races[0].SecondPractice.time}`
     );
   }
 
   let dayOne = {
     day: days[dayOneDate.getDay()],
     icon: null,
-    condition: "No Data!",
+    condition: "No data yet!",
   };
   let dayTwo = {
     day: days[dayTwoDate.getDay()],
     icon: null,
-    condition: "No Data!",
+    condition: "No data yet!",
   };
   let dayThree = {
     day: days[dayThreeDate.getDay()],
     icon: null,
-    condition: "No Data!",
+    condition: "No data yet!",
   };
 
   for (let i = 0; i < 8; i++) {
