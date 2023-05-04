@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     // Get current F1 season schedule
     axios
-      .get(`http://ergast.com/api/f1/current/next.json`)
+      .get(`https://ergast.com/api/f1/current/next.json`)
       .then((response) => {
         setScheduleData(response.data);
         setCity(
