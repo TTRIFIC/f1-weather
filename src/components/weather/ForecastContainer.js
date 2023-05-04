@@ -15,21 +15,24 @@ const ForecastContainer = ({ weatherData, scheduleData }) => {
     "SUNDAY",
   ];
 
+  let dayTwoDate = null;
+
+  try {
+    dayTwoDate = new Date(
+      `${scheduleData.MRData.RaceTable.Races[0].Sprint.date} ${scheduleData.MRData.RaceTable.Races[0].Sprint.time}`
+    );
+  } catch (error) {
+    dayTwoDate = new Date(
+      `${scheduleData.MRData.RaceTable.Races[0].Qualifying.date} ${scheduleData.MRData.RaceTable.Races[0].Qualifying.time}`
+    );
+  }
+
   let dayOneDate = new Date(
     `${scheduleData.MRData.RaceTable.Races[0].FirstPractice.date} ${scheduleData.MRData.RaceTable.Races[0].FirstPractice.time}`
-  );
-  let dayTwoDate = new Date(
-    `${scheduleData.MRData.RaceTable.Races[0].Qualifying.date} ${scheduleData.MRData.RaceTable.Races[0].Qualifying.time}`
   );
   let dayThreeDate = new Date(
     `${scheduleData.MRData.RaceTable.Races[0].date} ${scheduleData.MRData.RaceTable.Races[0].time}`
   );
-
-  if (scheduleData.MRData.RaceTable.Races[0].Sprint.Date !== null) {
-    dayTwoDate = new Date(
-      `${scheduleData.MRData.RaceTable.Races[0].Sprint.date} ${scheduleData.MRData.RaceTable.Races[0].Sprint.time}`
-    );
-  }
 
   let dayOne = {
     day: days[dayOneDate.getDay()],
