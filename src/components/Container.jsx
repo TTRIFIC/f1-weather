@@ -8,9 +8,9 @@ import ForecastContainer from "./weather/ForecastContainer";
 
 import "./Container.css";
 
-const Container = ({ city, location, weatherData, scheduleData }) => {
-  const raceDate = scheduleData.MRData.RaceTable.Races[0].date;
-  const raceTime = scheduleData.MRData.RaceTable.Races[0].time;
+const Container = ({ city, location, weatherData, race }) => {
+  const raceDate = race.date;
+  const raceTime = race.time;
 
   return (
     <div className="container">
@@ -19,10 +19,7 @@ const Container = ({ city, location, weatherData, scheduleData }) => {
       <Timer raceDate={raceDate} raceTime={raceTime} />
       <CurrentWeather weatherData={weatherData} />
       <HourlyWeather weatherData={weatherData} />
-      <ForecastContainer
-        weatherData={weatherData}
-        scheduleData={scheduleData}
-      />
+      <ForecastContainer weatherData={weatherData} race={race} />
     </div>
   );
 };

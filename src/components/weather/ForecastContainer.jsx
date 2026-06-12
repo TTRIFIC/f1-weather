@@ -3,7 +3,7 @@ import DailyForecast from "./DailyForecast";
 
 import "./ForecastContainer.css";
 
-const ForecastContainer = ({ weatherData, scheduleData }) => {
+const ForecastContainer = ({ weatherData, race }) => {
   var days = [
     "SUNDAY",
     "MONDAY",
@@ -15,24 +15,11 @@ const ForecastContainer = ({ weatherData, scheduleData }) => {
     "SUNDAY",
   ];
 
-  let dayTwoDate = null;
-
-  try {
-    dayTwoDate = new Date(
-      `${scheduleData.MRData.RaceTable.Races[0].Sprint.date} ${scheduleData.MRData.RaceTable.Races[0].Sprint.time}`
-    );
-  } catch (error) {
-    dayTwoDate = new Date(
-      `${scheduleData.MRData.RaceTable.Races[0].Qualifying.date} ${scheduleData.MRData.RaceTable.Races[0].Qualifying.time}`
-    );
-  }
-
-  let dayOneDate = new Date(
-    `${scheduleData.MRData.RaceTable.Races[0].FirstPractice.date} ${scheduleData.MRData.RaceTable.Races[0].FirstPractice.time}`
-  );
-  let dayThreeDate = new Date(
-    `${scheduleData.MRData.RaceTable.Races[0].date} ${scheduleData.MRData.RaceTable.Races[0].time}`
-  );
+  // Forecast the three on-track days: practice (Fri), qualifying/sprint (Sat),
+  // and the race (Sun). On sprint weekends the Saturday slot uses the sprint.
+  let dayOneDate = new Date(race.sessions.fp1);
+  let dayTwoDate = new Date(race.sessions.sprint || race.sessions.qualifying);
+  let dayThreeDate = new Date(race.sessions.race);
 
   let dayOne = {
     day: days[dayOneDate.getDay()],

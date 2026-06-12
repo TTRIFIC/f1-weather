@@ -1,0 +1,401 @@
+{
+  "season": "2026",
+  "races": [
+    {
+      "round": 1,
+      "title": "Australian Grand Prix",
+      "country": "Australia",
+      "city": "Melbourne",
+      "latitude": -37.8497,
+      "longitude": 144.968,
+      "date": "2026-03-08",
+      "time": "04:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-03-06T01:30:00Z",
+        "fp2": "2026-03-06T05:00:00Z",
+        "fp3": "2026-03-07T01:30:00Z",
+        "qualifying": "2026-03-07T05:00:00Z",
+        "race": "2026-03-08T04:00:00Z"
+      }
+    },
+    {
+      "round": 2,
+      "title": "Chinese Grand Prix",
+      "country": "China",
+      "city": "Shanghai",
+      "latitude": 31.3389,
+      "longitude": 121.22,
+      "date": "2026-03-15",
+      "time": "07:00:00Z",
+      "sprintWeekend": true,
+      "sessions": {
+        "fp1": "2026-03-13T03:30:00Z",
+        "sprintQualifying": "2026-03-13T07:30:00Z",
+        "sprint": "2026-03-14T03:00:00Z",
+        "qualifying": "2026-03-14T07:00:00Z",
+        "race": "2026-03-15T07:00:00Z"
+      }
+    },
+    {
+      "round": 3,
+      "title": "Japanese Grand Prix",
+      "country": "Japan",
+      "city": "Suzuka",
+      "latitude": 34.8431,
+      "longitude": 136.541,
+      "date": "2026-03-29",
+      "time": "05:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-03-27T02:30:00Z",
+        "fp2": "2026-03-27T06:00:00Z",
+        "fp3": "2026-03-28T02:30:00Z",
+        "qualifying": "2026-03-28T06:00:00Z",
+        "race": "2026-03-29T05:00:00Z"
+      }
+    },
+    {
+      "round": 4,
+      "title": "Miami Grand Prix",
+      "country": "USA",
+      "city": "Miami",
+      "latitude": 25.9581,
+      "longitude": -80.2389,
+      "date": "2026-05-03",
+      "time": "17:00:00Z",
+      "sprintWeekend": true,
+      "sessions": {
+        "fp1": "2026-05-01T16:00:00Z",
+        "sprintQualifying": "2026-05-01T20:30:00Z",
+        "sprint": "2026-05-02T16:00:00Z",
+        "qualifying": "2026-05-02T20:00:00Z",
+        "race": "2026-05-03T17:00:00Z"
+      }
+    },
+    {
+      "round": 5,
+      "title": "Canadian Grand Prix",
+      "country": "Canada",
+      "city": "Montreal",
+      "latitude": 45.5,
+      "longitude": -73.5228,
+      "date": "2026-05-24",
+      "time": "20:00:00Z",
+      "sprintWeekend": true,
+      "sessions": {
+        "fp1": "2026-05-22T16:30:00Z",
+        "sprintQualifying": "2026-05-22T20:30:00Z",
+        "sprint": "2026-05-23T16:00:00Z",
+        "qualifying": "2026-05-23T20:00:00Z",
+        "race": "2026-05-24T20:00:00Z"
+      }
+    },
+    {
+      "round": 6,
+      "title": "Monaco Grand Prix",
+      "country": "Monaco",
+      "city": "Monte-Carlo",
+      "latitude": 43.7347,
+      "longitude": 7.42056,
+      "date": "2026-06-07",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-06-05T11:30:00Z",
+        "fp2": "2026-06-05T15:00:00Z",
+        "fp3": "2026-06-06T10:30:00Z",
+        "qualifying": "2026-06-06T14:00:00Z",
+        "race": "2026-06-07T13:00:00Z"
+      }
+    },
+    {
+      "round": 7,
+      "title": "Barcelona-Catalunya Grand Prix",
+      "country": "Spain",
+      "city": "Barcelona",
+      "latitude": 41.57,
+      "longitude": 2.26111,
+      "date": "2026-06-14",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-06-12T11:30:00Z",
+        "fp2": "2026-06-12T15:00:00Z",
+        "fp3": "2026-06-13T10:30:00Z",
+        "qualifying": "2026-06-13T14:00:00Z",
+        "race": "2026-06-14T13:00:00Z"
+      }
+    },
+    {
+      "round": 8,
+      "title": "Austrian Grand Prix",
+      "country": "Austria",
+      "city": "Spielberg",
+      "latitude": 47.2197,
+      "longitude": 14.7647,
+      "date": "2026-06-28",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-06-26T11:30:00Z",
+        "fp2": "2026-06-26T15:00:00Z",
+        "fp3": "2026-06-27T10:30:00Z",
+        "qualifying": "2026-06-27T14:00:00Z",
+        "race": "2026-06-28T13:00:00Z"
+      }
+    },
+    {
+      "round": 9,
+      "title": "British Grand Prix",
+      "country": "UK",
+      "city": "Silverstone",
+      "latitude": 52.0786,
+      "longitude": -1.01694,
+      "date": "2026-07-05",
+      "time": "14:00:00Z",
+      "sprintWeekend": true,
+      "sessions": {
+        "fp1": "2026-07-03T11:30:00Z",
+        "sprintQualifying": "2026-07-03T15:30:00Z",
+        "sprint": "2026-07-04T11:00:00Z",
+        "qualifying": "2026-07-04T15:00:00Z",
+        "race": "2026-07-05T14:00:00Z"
+      }
+    },
+    {
+      "round": 10,
+      "title": "Belgian Grand Prix",
+      "country": "Belgium",
+      "city": "Spa-Francorchamps",
+      "latitude": 50.4372,
+      "longitude": 5.97139,
+      "date": "2026-07-19",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-07-17T11:30:00Z",
+        "fp2": "2026-07-17T15:00:00Z",
+        "fp3": "2026-07-18T10:30:00Z",
+        "qualifying": "2026-07-18T14:00:00Z",
+        "race": "2026-07-19T13:00:00Z"
+      }
+    },
+    {
+      "round": 11,
+      "title": "Hungarian Grand Prix",
+      "country": "Hungary",
+      "city": "Budapest",
+      "latitude": 47.5789,
+      "longitude": 19.2486,
+      "date": "2026-07-26",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-07-24T11:30:00Z",
+        "fp2": "2026-07-24T15:00:00Z",
+        "fp3": "2026-07-25T10:30:00Z",
+        "qualifying": "2026-07-25T14:00:00Z",
+        "race": "2026-07-26T13:00:00Z"
+      }
+    },
+    {
+      "round": 12,
+      "title": "Dutch Grand Prix",
+      "country": "Netherlands",
+      "city": "Zandvoort",
+      "latitude": 52.3888,
+      "longitude": 4.54092,
+      "date": "2026-08-23",
+      "time": "13:00:00Z",
+      "sprintWeekend": true,
+      "sessions": {
+        "fp1": "2026-08-21T10:30:00Z",
+        "sprintQualifying": "2026-08-21T14:30:00Z",
+        "sprint": "2026-08-22T10:00:00Z",
+        "qualifying": "2026-08-22T14:00:00Z",
+        "race": "2026-08-23T13:00:00Z"
+      }
+    },
+    {
+      "round": 13,
+      "title": "Italian Grand Prix",
+      "country": "Italy",
+      "city": "Monza",
+      "latitude": 45.6156,
+      "longitude": 9.28111,
+      "date": "2026-09-06",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-09-04T10:30:00Z",
+        "fp2": "2026-09-04T14:00:00Z",
+        "fp3": "2026-09-05T10:30:00Z",
+        "qualifying": "2026-09-05T14:00:00Z",
+        "race": "2026-09-06T13:00:00Z"
+      }
+    },
+    {
+      "round": 14,
+      "title": "Spanish Grand Prix",
+      "country": "Spain",
+      "city": "Madrid",
+      "latitude": 40.4669,
+      "longitude": -3.616,
+      "date": "2026-09-13",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-09-11T11:30:00Z",
+        "fp2": "2026-09-11T15:00:00Z",
+        "fp3": "2026-09-12T10:30:00Z",
+        "qualifying": "2026-09-12T14:00:00Z",
+        "race": "2026-09-13T13:00:00Z"
+      }
+    },
+    {
+      "round": 15,
+      "title": "Azerbaijan Grand Prix",
+      "country": "Azerbaijan",
+      "city": "Baku",
+      "latitude": 40.3725,
+      "longitude": 49.8533,
+      "date": "2026-09-26",
+      "time": "11:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-09-24T08:30:00Z",
+        "fp2": "2026-09-24T12:00:00Z",
+        "fp3": "2026-09-25T08:30:00Z",
+        "qualifying": "2026-09-25T12:00:00Z",
+        "race": "2026-09-26T11:00:00Z"
+      }
+    },
+    {
+      "round": 16,
+      "title": "Singapore Grand Prix",
+      "country": "Singapore",
+      "city": "Singapore",
+      "latitude": 1.2914,
+      "longitude": 103.864,
+      "date": "2026-10-11",
+      "time": "12:00:00Z",
+      "sprintWeekend": true,
+      "sessions": {
+        "fp1": "2026-10-09T08:30:00Z",
+        "sprintQualifying": "2026-10-09T12:30:00Z",
+        "sprint": "2026-10-10T09:00:00Z",
+        "qualifying": "2026-10-10T13:00:00Z",
+        "race": "2026-10-11T12:00:00Z"
+      }
+    },
+    {
+      "round": 17,
+      "title": "United States Grand Prix",
+      "country": "USA",
+      "city": "Austin",
+      "latitude": 30.1328,
+      "longitude": -97.6411,
+      "date": "2026-10-25",
+      "time": "20:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-10-23T17:30:00Z",
+        "fp2": "2026-10-23T21:00:00Z",
+        "fp3": "2026-10-24T17:30:00Z",
+        "qualifying": "2026-10-24T21:00:00Z",
+        "race": "2026-10-25T20:00:00Z"
+      }
+    },
+    {
+      "round": 18,
+      "title": "Mexico City Grand Prix",
+      "country": "Mexico",
+      "city": "Mexico City",
+      "latitude": 19.4042,
+      "longitude": -99.0907,
+      "date": "2026-11-01",
+      "time": "20:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-10-30T18:30:00Z",
+        "fp2": "2026-10-30T22:00:00Z",
+        "fp3": "2026-10-31T17:30:00Z",
+        "qualifying": "2026-10-31T21:00:00Z",
+        "race": "2026-11-01T20:00:00Z"
+      }
+    },
+    {
+      "round": 19,
+      "title": "São Paulo Grand Prix",
+      "country": "Brazil",
+      "city": "São Paulo",
+      "latitude": -23.7036,
+      "longitude": -46.6997,
+      "date": "2026-11-08",
+      "time": "17:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-11-06T15:30:00Z",
+        "fp2": "2026-11-06T19:00:00Z",
+        "fp3": "2026-11-07T14:30:00Z",
+        "qualifying": "2026-11-07T18:00:00Z",
+        "race": "2026-11-08T17:00:00Z"
+      }
+    },
+    {
+      "round": 20,
+      "title": "Las Vegas Grand Prix",
+      "country": "USA",
+      "city": "Las Vegas",
+      "latitude": 36.1147,
+      "longitude": -115.173,
+      "date": "2026-11-22",
+      "time": "04:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-11-20T00:30:00Z",
+        "fp2": "2026-11-20T04:00:00Z",
+        "fp3": "2026-11-21T00:30:00Z",
+        "qualifying": "2026-11-21T04:00:00Z",
+        "race": "2026-11-22T04:00:00Z"
+      }
+    },
+    {
+      "round": 21,
+      "title": "Qatar Grand Prix",
+      "country": "Qatar",
+      "city": "Lusail",
+      "latitude": 25.49,
+      "longitude": 51.4542,
+      "date": "2026-11-29",
+      "time": "16:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-11-27T13:30:00Z",
+        "fp2": "2026-11-27T17:00:00Z",
+        "fp3": "2026-11-28T14:30:00Z",
+        "qualifying": "2026-11-28T18:00:00Z",
+        "race": "2026-11-29T16:00:00Z"
+      }
+    },
+    {
+      "round": 22,
+      "title": "Abu Dhabi Grand Prix",
+      "country": "UAE",
+      "city": "Abu Dhabi",
+      "latitude": 24.4672,
+      "longitude": 54.6031,
+      "date": "2026-12-06",
+      "time": "13:00:00Z",
+      "sprintWeekend": false,
+      "sessions": {
+        "fp1": "2026-12-04T09:30:00Z",
+        "fp2": "2026-12-04T13:00:00Z",
+        "fp3": "2026-12-05T10:30:00Z",
+        "qualifying": "2026-12-05T14:00:00Z",
+        "race": "2026-12-06T13:00:00Z"
+      }
+    }
+  ]
+}
